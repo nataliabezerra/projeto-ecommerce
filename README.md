@@ -30,6 +30,11 @@ A falta de certas marcas não enviarem seus produtos para região norte, ele aju
 * Adicionar forma de pagamento
 * Recuperar senha
 
+<h2>Lista de elicitações:</h2>
+
+* Entrevista com especialista na área de beleza
+* Formulário de pesquisa (para o público)
+
 <h2>Lista de requisitos não funcionais</h2>
  
  * Segurança
@@ -38,3 +43,7 @@ A falta de certas marcas não enviarem seus produtos para região norte, ele aju
  * Tolerância a Falhas
 
  <h2>Sistemas semelhantes:</h2>
+
+* <https://www.belezanaweb.com.br/>
+* <https://www.sephora.com.br/>
+* <https://www.boticario.com.br/>
