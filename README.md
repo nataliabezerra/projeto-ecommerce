@@ -18,18 +18,18 @@ A falta de certas marcas não enviarem seus produtos para região norte, ele aju
 
 * Cadastrar usuário
 * Cadastrar produto
+* Efetuar logout
 * Efetuar login
+* Recuperar senha
 * Pesquisar produto
 * Pesquisar marca
 * Adicionar produto ao carrinho 
 * Remover produto do carrinho
 * Realizar compra do produto
-* Efetuar logout
 * Fazer comentário
 * Adicionar cupom de desconto
-* Inserir endereço de entrega
 * Adicionar forma de pagamento
-* Recuperar senha
+* Inserir endereço de entrega
 
 ## Lista de elicitações:
 
