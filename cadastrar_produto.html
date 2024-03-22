@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produto - North Beauty</title>
+    <title>Cadastrar Produto - Norte Beauty</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Cadastro de Produto</h1>
-
-    <form action="/cadastrar_produto" method="post">
-        <fieldset>
-            <legend>Informações do Produto</legend>
-            <label for="nome_produto">Nome do Produto:</label>
-            <input type="text" id="nome_produto" name="nome_produto" required><br>
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" name="marca" required><br>
-            <label for="descricao">Descrição:</label><br>
-            <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Digite a descrição do produto aqui" required></textarea><br>
-            <label for="preco">Preço:</label>
-            <input type="number" id="preco" name="preco" min="0" step="0.01" required><br>
-            <label for="estoque">Quantidade em Estoque:</label>
-            <input type="number" id="estoque" name="estoque" min="0" required><br>
-            <label for="categoria">Categoria:</label>
-            <select id="categoria" name="categoria" required>
-                <option value="">Selecione a categoria</option>
-                <option value="cosmeticos">Cosméticos</option>
-                <option value="perfumes">Perfumes</option>
-                <option value="cuidados_pele">Cuidados com a Pele</option>
-                <option value="cuidados_cabelo">Cuidados com o Cabelo</option>
-                <option value="acessorios">Acessórios</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Fotos do Produto</legend>
-            <label for="foto">Selecionar Foto:</label>
-            <input type="file" id="foto" name="foto" accept="image/*" required><br>
-        </fieldset>
-        <button type="submit">Cadastrar</button>
-        <button type="reset">Limpar</button>
-    </form>
+    <div class="container">
+        <h1>Cadastrar Produto</h1>
+        <form action="/cadastrar_produto" method="post">
+            <fieldset>
+                <legend>Informações do Produto</legend>
+                <label for="nome_produto">Nome do Produto:</label>
+                <input type="text" id="nome_produto" name="nome_produto" required><br>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required><br>
+                <label for="descricao">Descrição:</label><br>
+                <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Digite a descrição do produto aqui" required></textarea><br>
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" min="0" step="0.01" required><br>
+                <label for="estoque">Quantidade em Estoque:</label>
+                <input type="number" id="estoque" name="estoque" min="0" required><br>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="cosmeticos">Cosméticos</option>
+                    <option value="perfumes">Perfumes</option>
+                    <option value="cuidados_pele">Cuidados com a Pele</option>
+                    <option value="cuidados_cabelo">Cuidados com o Cabelo</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Fotos do Produto</legend>
+                <label for="foto">Selecionar Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required><br>
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
 </body>
 </html>
