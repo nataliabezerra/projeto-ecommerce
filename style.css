@@ -1,0 +1,51 @@
+body {
+   background: radial-gradient(circle at top left, #4d4dc9, hsl(60, 100%, 84%), #0a0a57);
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    width: 600px;  
+    padding: 0px 20px 20px;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0a0a57;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+}
+button{
+    background-color: #0a0a57;
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: azure;
+    border-radius: 8px;
+
+}
+
+input{
+    background-color: azure;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#notificacao{
+    background-color: azure;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+h3{
+    line-height: 2.1;
+}
+
+::placeholder{
+    font-weight: bold;
+    font-size: 15px;
+    color: hsl(226, 23%, 41%);  
+}
