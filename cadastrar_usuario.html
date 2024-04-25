@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North beauty</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1>Login</h1>
     <form action="/visualizacao" method="post">
-            <h3>
+        <h3>
             <input type="text" id="nome" name="'nome" required placeholder=" Nome"><br>
-            <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-            id="email" name="email"  required placeholder=" Email"> <br>
+            <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}" id="email" name="email" required
+                placeholder=" Email"> <br>
             <input type="password" id="senha" minlength="6" required placeholder=" Senha"></div><br>
-            <label for="notificacao">Receber notificações do site?</label> 
-            <input type="checkbox" id="notificacao" name="notificacao" required> <br>
+            <div class="container">
+                <div class="quadrado"></div> <br>
+
+
+                <button type="submit">Login</button><br>
+                <button type="submit">Cadastrar</button>
+                <h4 id="esqueceu"><a href="colocar o link dps"></a><em>Esqueceu a senha?</em></h4>
         </h3>
-        <button type="submit">Login</button>
     </form>
 </body>
-</html> 
+
+</html>
