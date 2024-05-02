@@ -2,14 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8f939e; /* Tom predominante da Sephora */
+    background-color: #f4f7fa; /* Tom pastel de azul */
 }
 
 header {
-    background-color: #27282c; /* Tom escuro */
-    color: white;
+    background-color: #ffffff; /* Branco */
+    color: #333333; /* Cinza escuro */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 h1 {
