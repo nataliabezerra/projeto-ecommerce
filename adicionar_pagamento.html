@@ -3,21 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>North Beauty - Inserir Endereço</title>
+        <title>North Beauty - Adicionar forma de pagamento</title>
         <link rel="stylesheet" href="stylemarca.css">
     </head>
     <body>
 
-        <h1>Endereço:</h1>
+        <h1>Pagamento:</h1>
         <form action="/visualizacao" method="post">
-                <h3>
-                <input type="text" id="rua" name="rua" required placeholder="Avenida/Rua"><br>
-                <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-                id="número" name="número"  required placeholder="Número"> <br>
-                <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-                id="CEP" name="CEP"  required placeholder="CEP"> <br>
-                <input type="text" id="Cidade" required placeholder="Cidade"><br>
-                <input type="text" id="complemento" name="complemento" required placeholder="Complemento"><br>
+            <h3>
+                <fieldset>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Forma de pagamento:</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Mercado pago">Mercado pago</option>
+                    </select>
+                    <h5>Cartão de Crédito:</h5>
+                    <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
+                    id="número" name="número"  required placeholder="Número do Cartão"> <br>
+                    <input type="text" id="Nome do Titular" required placeholder="Nome do Titular"><br>
+                    <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
+                    id="número" name="número"  required placeholder="Código de segurança"> <br>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Tipo:</option>
+                        <option value="visa">visa</option>
+                        <option value="Master Card">Master Card</option>
+                        <option value="Elo">Elo</option>
+                    </select>
+                    <select id="Parcelar em:" name="Parcelar em:" required>
+                        <option value="">Parcelar em:</option>
+                        <option value="1x">1x</option>
+                        <option value="2x">2x</option>
+                        <option value="3x">3x</option>
+                        <option value="4x">4x</option>
+                        <option value="5x">5x</option>
+                        <option value="6x">6x</option>
+                        <option value="7x">7x</option>
+                        <option value="8x">8x</option>
+                        <option value="9x">9x</option>
+                        <option value="10x">10x</option>
+                        <option value="11x">11x</option>
+                        <option value="12x">12x</option>
+                    </select>
+                    <h5>Data de Vencimento:</h5>
+                    <select id="data" name="data" required>
+                        <option value="mês">Mês:</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <input type="número" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
+                    id="número" name="número"  required placeholder="Ano"> <br>
+                </fieldset>
             </h3>
             <button type="submit">Salvar</button>
         </form>
