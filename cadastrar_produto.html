@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Beauty - Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro de Produto - North Beauty</title>
 </head>
 <body>
-    <header>
-        <h1>North Beauty</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="login-form">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Entrar</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 North Beauty. Todos os direitos reservados.</p>
-    </footer>
+    <h1>Cadastro de Produto</h1>
+
+    <form action="/cadastrar_produto" method="post">
+        <fieldset>
+            <legend>Informações do Produto</legend>
+            <label for="nome_produto">Nome do Produto:</label>
+            <input type="text" id="nome_produto" name="nome_produto" required><br>
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required><br>
+            <label for="descricao">Descrição:</label><br>
+            <textarea name="descricao" id="descricao" cols="50" rows="4" placeholder="Digite a descrição do produto aqui" required></textarea><br>
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" min="0" step="0.01" required><br>
+            <label for="estoque">Quantidade em Estoque:</label>
+            <input type="number" id="estoque" name="estoque" min="0" required><br>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="cosmeticos">Cosméticos</option>
+                <option value="perfumes">Perfumes</option>
+                <option value="cuidados_pele">Cuidados com a Pele</option>
+                <option value="cuidados_cabelo">Cuidados com o Cabelo</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Fotos do Produto</legend>
+            <label for="foto">Selecionar Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required><br>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
 </body>
 </html>
