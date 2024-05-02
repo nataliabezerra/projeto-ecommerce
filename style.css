@@ -1,51 +1,69 @@
 body {
-   background: radial-gradient(circle at top left, #4d4dc9, hsl(60, 100%, 84%), #0a0a57);
+    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
-    align-items: center;
+    padding: 0;
+    background-color: #f4f7fa; 
+}
+
+header {
+    background-color: #ffffff; 
+    color: #333333;
+    padding: 20px;
     text-align: center;
-    width: 600px;  
-    padding: 0px 20px 20px;
-    line-height: 1.8;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #0a0a57;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 45px;
+h1 {
+    margin: 0;
 }
-button{
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center; 
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #dbe4eb;
+    border-radius: 5px; 
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
     background-color: #0a0a57;
-    width: 200px;
-    height: 35px;
-    font-size: 20px;
-    font-weight: bold;
-    color: azure;
-    border-radius: 8px;
-
-}
-
-input{
-    background-color: azure;
-    width: 200px;
-    height: 25px;
+    color: white;
+    font-size: 16px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto; 
 }
 
-#notificacao{
-    background-color: azure;
-    width: 50px;
-    height: 25px;
-    border-radius: 5px;
-}
-
-h3{
-    line-height: 2.1;
-}
-
-::placeholder{
-    font-weight: bold;
-    font-size: 15px;
-    color: hsl(226, 23%, 41%);  
+button:hover {
+    background-color: #4b8e9a; 
 }
