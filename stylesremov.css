@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa; /* Tom pastel de azul */
+    background-color: #8f939e; /* Tom predominante da Sephora */
 }
 
 header {
-    background-color: #ffffff; /* Branco */
-    color: #333333; /* Cinza escuro */
+    background-color: #27282c; /* Tom escuro */
+    color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -23,10 +23,10 @@ main {
 }
 
 .cart-item {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ main {
 
 .remove-from-cart {
     padding: 10px 20px;
-    background-color: #27282c; /* Tom escuro */
+    background-color: #27282c; 
     color: white;
     font-size: 16px;
     border: none;
@@ -55,11 +55,11 @@ main {
 }
 
 .remove-from-cart:hover {
-    background-color: #1a1b1e; /* Tom mais escuro */
+    background-color: #1a1b1e; 
 }
 
 footer {
-    background-color: #27282c; /* Tom escuro */
+    background-color: #27282c; 
     color: white;
     text-align: center;
     padding: 10px;

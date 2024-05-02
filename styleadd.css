@@ -8,11 +8,8 @@ body {
 header {
     background-color: #ffffff; /* Branco */
     color: #333333; /* Cinza escuro */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #8f939e; 
 }
-
 h1 {
     margin: 0;
 }
@@ -23,10 +20,10 @@ main {
 }
 
 .product {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
 }
 
@@ -38,7 +35,7 @@ main {
 
 .add-to-cart {
     padding: 10px 20px;
-    background-color: #27282c; /* Tom escuro */
+    background-color: #27282c; 
     color: white;
     font-size: 16px;
     border: none;
@@ -48,11 +45,11 @@ main {
 }
 
 .add-to-cart:hover {
-    background-color: #1a1b1e; /* Tom mais escuro */
+    background-color: #1a1b1e; 
 }
 
 footer {
-    background-color: #27282c; /* Tom escuro */
+    background-color: #27282c; 
     color: white;
     text-align: center;
     padding: 10px;
