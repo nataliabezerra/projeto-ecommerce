@@ -62,8 +62,15 @@ button {
     transition: background-color 0.3s;
     display: block;
     margin: 0 auto; 
+    height: 40px;
+    width: 150px;
 }
 
 button:hover {
     background-color: #4b8e9a; 
 }
+
+#frase{
+        white-space: nowrap;
+}
+
