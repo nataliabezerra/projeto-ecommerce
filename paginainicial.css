@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -13,7 +14,10 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 20px 0;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -38,6 +42,7 @@ nav ul li a {
 
 main {
     padding: 40px 0;
+    text-align: center;
 }
 
 .banner {
@@ -72,6 +77,7 @@ footer {
     color: #333333;
     padding: 20px 0;
     text-align: center;
+    
 }
 
 .search-bar input[type="text"] {
@@ -111,3 +117,152 @@ footer {
     font-weight: bold;
 }
 
+h1 {
+    margin: 0;
+}
+
+#Cadastrotitulo{
+    background-color: #ffffff; 
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#body_cadastro{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; 
+}
+
+#form_cadastro{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+#input-groupcadastro{
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+#checkbox-groupcadastro{
+    display: flex;
+    align-items: center; 
+}
+#labelcadastro{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #dbe4eb;
+    border-radius: 5px; 
+    outline: none;
+}
+#botãocadastro{
+    padding: 10px 20px;
+    background-color: #0a0a57;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto; 
+    height: 40px;
+    width: 150px;
+}
+
+#frase{
+    white-space: nowrap;
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #c8c9cc;
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+}
+#botaocomen{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0a0a57;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}
+.checkout h2 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.checkout p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #0a0a57; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#botãocarrinho{
+    padding: 10px 20px;
+    background-color: #0a0a57; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
