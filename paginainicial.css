@@ -6,6 +6,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -19,6 +20,7 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 header h1 {
     color: #0a0a57;
@@ -228,6 +230,13 @@ textarea {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .cart-item img {
@@ -235,6 +244,7 @@ textarea {
     height: auto;
     margin-right: 20px;
 }
+
 
 .info {
     flex-grow: 1;
@@ -265,4 +275,50 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+.remove-from-cart {
+    padding: 10px 20px;
+    background-color: #0a0a57; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+#numero{
+    margin: 20px 20px;
+}
+
+.carrinho {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+}
+
+.lista-produtos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-produtos li {
+    margin-bottom: 5px;
+}
+
+.botao-comprar {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-comprar:hover {
+    background-color: #45a049;
 }
