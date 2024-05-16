@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fa;
+    background-color: #e0f0ff; /* Tons pastéis de azul mais suaves */
+    position: relative;
 }
 
 .container {
@@ -12,15 +13,19 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    background-image: url('https://images.vexels.com/media/users/3/217085/isolated/preview/81447e17cc5efe0a1b4697bc91ad6e57-doodle-de-passaro-tropical-de-arara.png');
+    background-repeat: no-repeat;
+    background-size: 100px; /* Ajuste do tamanho da arara */
+    background-position: bottom left;
 }
 
 header h1 {
-    color: #0a0a57;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     margin: 0;
 }
 
@@ -36,7 +41,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333333;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
 }
 
 .top-buttons {
@@ -48,8 +53,8 @@ nav ul li a {
 .top-buttons button {
     margin-left: 10px;
     padding: 10px 20px;
-    background-color: #0a0a57;
-    color: white;
+    background-color: #b3c7e6; /* Tom de azul claro para harmonizar com a arara */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -59,11 +64,12 @@ nav ul li a {
 }
 
 .top-buttons button:hover {
-    background-color: #4b8e9a; 
+    background-color: #d0e4ff; /* Tom de azul mais claro no hover */
 }
 
 main {
     padding: 40px 0;
+    position: relative;
 }
 
 .payment-form fieldset {
@@ -76,13 +82,13 @@ main {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #0a0a57;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
 }
 
 .payment-form label {
     display: block;
     margin-bottom: 5px;
-    color: #333333;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
 }
 
 .payment-form input[type="text"],
@@ -93,12 +99,13 @@ main {
     border: 2px solid #dbe4eb;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
 }
 
 .payment-form button {
     padding: 10px 20px;
-    background-color: #0a0a57;
-    color: white;
+    background-color: #b3c7e6; /* Tom de azul claro para harmonizar com a arara */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -108,21 +115,30 @@ main {
 }
 
 .payment-form button[type="reset"] {
-    background-color: #e74c3c;
+    background-color: #ffb3b3;
     margin-left: 10px;
 }
 
 .payment-form button:hover {
-    background-color: #4b8e9a; 
+    background-color: #d0e4ff; /* Tom de azul mais claro no hover */
 }
 
 .payment-form button[type="reset"]:hover {
-    background-color: #c0392b;
+    background-color: #ffcccc;
 }
 
 footer {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     padding: 20px 0;
     text-align: center;
+    position: relative;
+}
+
+.arara {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px; /* Tamanho da arara */
+    z-index: -1; /* Mantém a arara atrás do conteúdo */
 }

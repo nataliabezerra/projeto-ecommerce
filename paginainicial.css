@@ -2,10 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fa;
+    background-color: #e6f7ff; /* Tons pastéis de azul */
     font-family: Arial, sans-serif;
 }
-
 
 .container {
     max-width: 1200px;
@@ -14,16 +13,20 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url('https://images.vexels.com/media/users/3/217085/isolated/preview/81447e17cc5efe0a1b4697bc91ad6e57-doodle-de-passaro-tropical-de-arara.png');
+    background-repeat: no-repeat;
+    background-size: 100px; /* Ajuste do tamanho da arara */
+    background-position: bottom left;
 }
 
-
 header h1 {
-    color: #0a0a57;
+    color: #0a0a57; /* Tom de azul mais escuro para contraste */
 }
 
 nav ul {
@@ -38,7 +41,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333333;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
     font-weight: bold;
 }
 
@@ -73,13 +76,11 @@ main {
     transition: background-color 0.3s;
 }
 
-
 footer {
     background-color: #ffffff;
-    color: #333333;
+    color: #4d4dc9; /* Tom de azul para contraste */
     padding: 20px 0;
     text-align: center;
-    
 }
 
 .search-bar input[type="text"] {
@@ -101,6 +102,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .logo-search {
     display: flex;
     align-items: center;
@@ -123,7 +125,7 @@ h1 {
     margin: 0;
 }
 
-#Cadastrotitulo{
+#Cadastrotitulo {
     background-color: #ffffff; 
     color: #333333;
     padding: 20px;
@@ -131,30 +133,31 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#body_cadastro{
+#body_cadastro {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa; 
+    background-color: #e6f7ff; 
 }
 
-#form_cadastro{
+#form_cadastro {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     text-align: center; 
 }
 
-#input-groupcadastro{
+#input-groupcadastro {
     margin-bottom: 20px;
     text-align: left; 
 }
 
-#checkbox-groupcadastro{
+#checkbox-groupcadastro {
     display: flex;
     align-items: center; 
 }
-#labelcadastro{
+
+#labelcadastro {
     display: inline-block;
     margin-bottom: 5px;
 }
@@ -170,7 +173,8 @@ input[type="checkbox"] {
     border-radius: 5px; 
     outline: none;
 }
-#botãocadastro{
+
+#botãocadastro {
     padding: 10px 20px;
     background-color: #0a0a57;
     color: white;
@@ -185,9 +189,10 @@ input[type="checkbox"] {
     width: 150px;
 }
 
-#frase{
+#frase {
     white-space: nowrap;
 }
+
 .comment-form {
     display: flex;
     flex-direction: column;
@@ -203,7 +208,8 @@ textarea {
     outline: none;
     resize: vertical;
 }
-#botaocomen{
+
+#botaocomen {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #0a0a57;
@@ -222,6 +228,7 @@ textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
 }
+
 .checkout h2 {
     margin-bottom: 20px;
 }
@@ -245,7 +252,6 @@ textarea {
     margin-right: 20px;
 }
 
-
 .info {
     flex-grow: 1;
     text-align: left;
@@ -266,7 +272,8 @@ textarea {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-#botãocarrinho{
+
+#botãocarrinho {
     padding: 10px 20px;
     background-color: #0a0a57; 
     color: white;
@@ -276,6 +283,7 @@ textarea {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .remove-from-cart {
     padding: 10px 20px;
     background-color: #0a0a57; 
@@ -284,7 +292,8 @@ textarea {
     border: none;
     border-radius: 5px;
 }
-#numero{
+
+#numero {
     margin: 20px 20px;
 }
 
