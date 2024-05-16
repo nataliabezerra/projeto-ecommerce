@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>North Beauty - Adicionar forma de pagamento</title>
-        <link rel="stylesheet" href="paginainicial.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Formas de Pagamento - North Beauty</title>
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>North Beauty</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="top-buttons">
+                <button>Cadastrar</button>
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
 
-        <h1>Pagamento:</h1>
-        <form action="/visualizacao" method="post">
-            <h3>
+    <main>
+        <div class="container">
+            <h2>Adicionar Formas de Pagamento</h2>
+            <form action="/adicionar_pagamento" method="post" class="payment-form">
                 <fieldset>
-                    <select id="categoria" name="categoria" required>
-                        <option value="">Forma de pagamento:</option>
-                        <option value="Pix">Pix</option>
-                        <option value="Cartão de Crédito">Cartão de Crédito</option>
-                        <option value="PayPal">PayPal</option>
-                        <option value="Mercado pago">Mercado pago</option>
-                    </select>
-                    <h5>Cartão de Crédito:</h5>
-                    <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-                    id="número" name="número"  required placeholder="Número do Cartão"> <br>
-                    <input type="text" id="Nome do Titular" required placeholder="Nome do Titular"><br>
-                    <input type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-                    id="número" name="número"  required placeholder="Código de segurança"> <br>
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Tipo:</option>
-                        <option value="visa">visa</option>
-                        <option value="Master Card">Master Card</option>
-                        <option value="Elo">Elo</option>
-                    </select>
-                    <select id="Parcelar em:" name="Parcelar em:" required>
-                        <option value="">Parcelar em:</option>
-                        <option value="1x">1x</option>
-                        <option value="2x">2x</option>
-                        <option value="3x">3x</option>
-                        <option value="4x">4x</option>
-                        <option value="5x">5x</option>
-                        <option value="6x">6x</option>
-                        <option value="7x">7x</option>
-                        <option value="8x">8x</option>
-                        <option value="9x">9x</option>
-                        <option value="10x">10x</option>
-                        <option value="11x">11x</option>
-                        <option value="12x">12x</option>
-                    </select>
-                    <h5>Data de Vencimento:</h5>
-                    <select id="data" name="data" required>
-                        <option value="mês">Mês:</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <input type="número" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-aZ-Z]{2}"
-                    id="número" name="número"  required placeholder="Ano"> <br>
+                    <legend>Informações do Pagamento</legend>
+                    <label for="tipo_pagamento">Tipo de Pagamento:</label>
+                    <select id="tipo_pagamento" name="tipo_pagamento" required>
+                        <option value="">Selecione o tipo de pagamento</option>
+                        <option value="cartao_credito">Cartão de Crédito</option>
+                        <option value="cartao_debito">Cartão de Débito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">PIX</option>
+                    </select><br>
+
+                    <label for="nome_titular">Nome do Titular:</label>
+                    <input type="text" id="nome_titular" name="nome_titular" required><br>
+                    
+                    <label for="numero_cartao">Número do Cartão:</label>
+                    <input type="text" id="numero_cartao" name="numero_cartao" required><br>
+                    
+                    <label for="validade">Validade (MM/AA):</label>
+                    <input type="text" id="validade" name="validade" required><br>
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required><br>
+                    
+                    <label for="parcelas">Quantidade de Parcelas:</label>
+                    <select id="parcelas" name="parcelas" required>
+                        <option value="">Selecione a quantidade de parcelas</option>
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="3">3x</option>
+                        <option value="4">4x</option>
+                        <option value="5">5x</option>
+                        <option value="6">6x</option>
+                        <option value="7">7x</option>
+                        <option value="8">8x</option>
+                        <option value="9">9x</option>
+                        <option value="10">10x</option>
+                        <option value="11">11x</option>
+                        <option value="12">12x</option>
+                    </select><br>
                 </fieldset>
-            </h3>
-            <button type="submit">Salvar</button>
-        </form>
-    </body>
-</html> 
+
+                <fieldset>
+                    <legend>Endereço de Entrega</legend>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required><br>
+                    
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required><br>
+                    
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required><br>
+                    
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required><br>
+                </fieldset>
+
+                <button type="submit">Adicionar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 North Beauty. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
