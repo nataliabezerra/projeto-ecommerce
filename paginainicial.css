@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #e6f7ff; /* Tons pastéis de azul */
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -14,8 +13,7 @@ body {
 
 header {
     background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -26,11 +24,12 @@ header {
 }
 
 header h1 {
-    color: #0a0a57; /* Tom de azul mais escuro para contraste */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    margin: 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -42,38 +41,89 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #3a3a6e; /* Tom de azul mais escuro para contraste */
-    font-weight: bold;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #b3c7e6; /* Tom de azul claro para harmonizar */
+    color: #0a0a57; /* Tom de azul escuro para contraste */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.top-buttons button:hover {
+    background-color: #d0e4ff; /* Tom de azul claro no hover */
 }
 
 main {
     padding: 40px 0;
-    text-align: center;
+    position: relative;
 }
 
-.banner {
-    background-color: #0a0a57;
-    color: #ffffff;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.banner h2 {
-    font-size: 36px;
-}
-
-.banner p {
-    font-size: 18px;
+.payment-form fieldset {
+    border: none;
     margin-bottom: 20px;
+    padding: 0;
 }
 
-.btn {
-    padding: 15px 30px;
-    background-color: #ffffff;
-    color: #0a0a57;
-    text-decoration: none;
-    border-radius: 5px;
+.payment-form legend {
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+}
+
+.payment-form input[type="text"],
+.payment-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #dbe4eb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
+}
+
+.payment-form button {
+    padding: 10px 20px;
+    background-color: #b3c7e6; /* Tom de azul claro para harmonizar com a arara */
+    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.payment-form button[type="reset"] {
+    background-color: #ffb3b3; /* Tom de vermelho para destaque */
+    margin-left: 10px;
+}
+
+.payment-form button:hover {
+    background-color: #d0e4ff; /* Tom de azul claro no hover */
+}
+
+.payment-form button[type="reset"]:hover {
+    background-color: #ffcccc; /* Tom de vermelho claro no hover */
 }
 
 footer {
@@ -83,24 +133,35 @@ footer {
     text-align: center;
 }
 
+.arara {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px; /* Tamanho da arara */
+    z-index: -1; /* Mantém a arara atrás do conteúdo */
+}
 .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #dbe4eb;
+    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #0a0a57;
+    background-color: #3a3a6e; /* Tom de azul mais escuro */
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #333399; /* Tom mais escuro de azul no hover */
 }
 
 .logo-search {
@@ -112,22 +173,13 @@ footer {
     margin-left: 20px;
 }
 
-.top-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    font-weight: bold;
-}
-
 h1 {
     margin: 0;
 }
 
 #Cadastrotitulo {
-    background-color: #ffffff; 
-    color: #333333;
+    background-color: #ffffff;
+    color: #3a3a6e; /* Tom de azul mais escuro */
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -137,29 +189,30 @@ h1 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6f7ff; 
+    background-color: #e0f0ff; /* Tom pastel suave de azul */
 }
 
 #form_cadastro {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 #input-groupcadastro {
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }
 
 #checkbox-groupcadastro {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 #labelcadastro {
     display: inline-block;
     margin-bottom: 5px;
+    color: #3a3a6e; /* Tom de azul mais escuro */
 }
 
 input[type="text"],
@@ -169,24 +222,28 @@ input[type="checkbox"] {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #dbe4eb;
-    border-radius: 5px; 
+    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
+    border-radius: 5px;
     outline: none;
 }
 
 #botãocadastro {
     padding: 10px 20px;
-    background-color: #0a0a57;
-    color: white;
+    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
+    color: #3a3a6e; /* Tom de azul mais escuro */
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     height: 40px;
     width: 150px;
+}
+
+#botãocadastro:hover {
+    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
 }
 
 #frase {
@@ -203,7 +260,7 @@ textarea {
     width: 300px;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #c8c9cc;
+    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
     border-radius: 5px;
     outline: none;
     resize: vertical;
@@ -212,8 +269,8 @@ textarea {
 #botaocomen {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #0a0a57;
-    color: white;
+    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
+    color: #3a3a6e; /* Tom de azul mais escuro */
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -221,11 +278,24 @@ textarea {
     transition: background-color 0.3s;
 }
 
+#botaocomen:hover {
+    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+}
+
+.payment-form button[type="reset"] {
+    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
+    color: #3a3a6e; /* Tom de azul mais escuro */
+}
+
+.payment-form button[type="reset"]:hover {
+    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+}
+
 .checkout {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -237,13 +307,11 @@ textarea {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
 }
 
 .cart-item img {
@@ -264,19 +332,23 @@ textarea {
 
 .checkout-btn {
     padding: 10px 20px;
-    background-color: #0a0a57; 
-    color: white;
+    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
+    color: #3a3a6e; /* Tom de azul mais escuro */
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+checkout-btn:hover {
+    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
 }
 
 #botãocarrinho {
     padding: 10px 20px;
-    background-color: #0a0a57; 
-    color: white;
+    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
+    color: #3a3a6e; /* Tom de azul mais escuro */
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -284,50 +356,14 @@ textarea {
     transition: background-color 0.3s;
 }
 
+#botãocarrinho:hover {
+background-color: #ffcccc; /* Tom mais claro de vermelho rosado /
+color: #3a3a6e; / Tom de azul mais escuro */
+}
+
 .remove-from-cart {
-    padding: 10px 20px;
-    background-color: #0a0a57; 
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-}
-
-#numero {
-    margin: 20px 20px;
-}
-
-.carrinho {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-}
-
-.lista-produtos {
-    list-style-type: none;
-    padding: 0;
-}
-
-.lista-produtos li {
-    margin-bottom: 5px;
-}
-
-.botao-comprar {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.botao-comprar:hover {
-    background-color: #45a049;
+padding: 10px 20px;
+background-color: #ffb3b3; /* Tom claro de vermelho rosado /
+color: #3a3a6e; / Tom de azul mais escuro */
+font
 }
