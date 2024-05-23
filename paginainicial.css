@@ -365,3 +365,57 @@ padding: 10px 20px;
 background-color: #ffb3b3;
 color: #3a3a6e;
 }
+
+main {
+    padding: 40px 0;
+    position: relative;
+}
+
+.product-form fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.product-form legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4d4dc9;
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="file"],
+.product-form select,
+.product-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #dbe4eb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+}
+
+.product-form button {
+    padding: 10px 20px;
+    background-color: #b3c7e6;
+    color: #0a0a57;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.product-form button[type="reset"] {
+    background-color: #ffb3b3;
+}
