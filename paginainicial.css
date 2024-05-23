@@ -2,9 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #e6f7ff; /* Tons pastéis de azul */
+    background-color: #e6f7ff;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,19 +11,19 @@ body {
 }
 
 header {
-    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
+    background-color: #f7f7ff;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     background-image: url('https://images.vexels.com/media/users/3/217085/isolated/preview/81447e17cc5efe0a1b4697bc91ad6e57-doodle-de-passaro-tropical-de-arara.png');
     background-repeat: no-repeat;
-    background-size: 100px; /* Ajuste do tamanho da arara */
+    background-size: 100px;
     background-position: bottom left;
 }
 
 header h1 {
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    color: #3a3a6e;
     margin: 0;
 }
 
@@ -40,7 +39,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    color: #3a3a6e;
 }
 
 .top-buttons {
@@ -52,8 +51,8 @@ nav ul li a {
 .top-buttons button {
     margin-left: 10px;
     padding: 10px 20px;
-    background-color: #b3c7e6; /* Tom de azul claro para harmonizar */
-    color: #0a0a57; /* Tom de azul escuro para contraste */
+    background-color: #b3c7e6;
+    color: #0a0a57; 
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -63,7 +62,7 @@ nav ul li a {
 }
 
 .top-buttons button:hover {
-    background-color: #d0e4ff; /* Tom de azul claro no hover */
+    background-color: #d0e4ff;
 }
 
 main {
@@ -81,13 +80,13 @@ main {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    color: #3a3a6e; 
 }
 
 .payment-form label {
     display: block;
     margin-bottom: 5px;
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    color: #3a3a6e;
 }
 
 .payment-form input[type="text"],
@@ -98,13 +97,13 @@ main {
     border: 2px solid #dbe4eb;
     border-radius: 5px;
     margin-bottom: 10px;
-    background-color: #f7f7ff; /* Tom de azul claro para harmonizar com a arara */
+    background-color: #f7f7ff;
 }
 
 .payment-form button {
     padding: 10px 20px;
-    background-color: #b3c7e6; /* Tom de azul claro para harmonizar com a arara */
-    color: #3a3a6e; /* Tom de azul mais escuro para contraste */
+    background-color: #b3c7e6;
+    color: #3a3a6e;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -114,21 +113,21 @@ main {
 }
 
 .payment-form button[type="reset"] {
-    background-color: #ffb3b3; /* Tom de vermelho para destaque */
+    background-color: #ffb3b3;
     margin-left: 10px;
 }
 
 .payment-form button:hover {
-    background-color: #d0e4ff; /* Tom de azul claro no hover */
+    background-color: #d0e4ff;
 }
 
 .payment-form button[type="reset"]:hover {
-    background-color: #ffcccc; /* Tom de vermelho claro no hover */
+    background-color: #ffcccc;
 }
 
 footer {
     background-color: #ffffff;
-    color: #4d4dc9; /* Tom de azul para contraste */
+    color: #4d4dc9;
     padding: 20px 0;
     text-align: center;
 }
@@ -137,21 +136,21 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 100px; /* Tamanho da arara */
-    z-index: -1; /* Mantém a arara atrás do conteúdo */
+    width: 100px;
+    z-index: -1;
 }
 .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
+    border: 2px solid #dbe4eb;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #3a3a6e;
     color: white;
     font-size: 16px;
     border: none;
@@ -161,7 +160,7 @@ footer {
 }
 
 .search-bar button:hover {
-    background-color: #333399; /* Tom mais escuro de azul no hover */
+    background-color: #333399;
 }
 
 .logo-search {
@@ -179,7 +178,7 @@ h1 {
 
 #Cadastrotitulo {
     background-color: #ffffff;
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    color: #3a3a6e;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -189,7 +188,7 @@ h1 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f0ff; /* Tom pastel suave de azul */
+    background-color: #e0f0ff;
 }
 
 #form_cadastro {
@@ -212,7 +211,7 @@ h1 {
 #labelcadastro {
     display: inline-block;
     margin-bottom: 5px;
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    color: #3a3a6e;
 }
 
 input[type="text"],
@@ -222,15 +221,15 @@ input[type="checkbox"] {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
+    border: 2px solid #dbe4eb;
     border-radius: 5px;
     outline: none;
 }
 
 #botãocadastro {
     padding: 10px 20px;
-    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #ffb3b3;
+    color: #3a3a6e;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -243,7 +242,7 @@ input[type="checkbox"] {
 }
 
 #botãocadastro:hover {
-    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+    background-color: #ffcccc;
 }
 
 #frase {
@@ -260,7 +259,7 @@ textarea {
     width: 300px;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #dbe4eb; /* Tom muito claro de azul acinzentado */
+    border: 2px solid #dbe4eb;
     border-radius: 5px;
     outline: none;
     resize: vertical;
@@ -269,8 +268,8 @@ textarea {
 #botaocomen {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #ffb3b3;
+    color: #3a3a6e; 
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -279,16 +278,16 @@ textarea {
 }
 
 #botaocomen:hover {
-    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+    background-color: #ffcccc;
 }
 
 .payment-form button[type="reset"] {
-    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #ffb3b3;
+    color: #3a3a6e;
 }
 
 .payment-form button[type="reset"]:hover {
-    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+    background-color: #ffcccc; 
 }
 
 .checkout {
@@ -332,8 +331,8 @@ textarea {
 
 .checkout-btn {
     padding: 10px 20px;
-    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #ffb3b3;
+    color: #3a3a6e; 
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -342,13 +341,13 @@ textarea {
 }
 
 checkout-btn:hover {
-    background-color: #ffcccc; /* Tom mais claro de vermelho rosado */
+    background-color: #ffcccc;
 }
 
 #botãocarrinho {
     padding: 10px 20px;
-    background-color: #ffb3b3; /* Tom claro de vermelho rosado */
-    color: #3a3a6e; /* Tom de azul mais escuro */
+    background-color: #ffb3b3;
+    color: #3a3a6e; 
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -357,13 +356,12 @@ checkout-btn:hover {
 }
 
 #botãocarrinho:hover {
-background-color: #ffcccc; /* Tom mais claro de vermelho rosado /
-color: #3a3a6e; / Tom de azul mais escuro */
+background-color: #ffcccc;
+color: #3a3a6e;
 }
 
 .remove-from-cart {
 padding: 10px 20px;
-background-color: #ffb3b3; /* Tom claro de vermelho rosado /
-color: #3a3a6e; / Tom de azul mais escuro */
-font
+background-color: #ffb3b3;
+color: #3a3a6e;
 }
