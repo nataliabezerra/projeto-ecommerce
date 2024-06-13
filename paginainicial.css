@@ -419,3 +419,26 @@ main {
 .product-form button[type="reset"] {
     background-color: #ffb3b3;
 }
+
+.bodyprod{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
+
+.prod{
+    background-color: #E6F5F6;
+    width: 300px; /* Largura da div */
+    height: 420px; /* Altura da div */
+    text-align: center;
+    border-radius: 5%;
+    margin: 10px;
+    float: left;
+   
+}
+.imga{
+    max-width: 250px; /* Largura máxima da imagem */
+    max-height: 250px; /* Altura máxima da imagem */
+}
