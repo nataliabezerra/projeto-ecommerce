@@ -4,25 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="paginainicial.css">
+    <script src="script.js"></script>
     <title>Produtos</title>
 </head>
 
     <body class="bodyprod">
+        <header id="ss"> <strong>NorthBeauty</strong>
+            <input type="text" id="pesquisarprodutos" placeholder="Pesquisar produto ou marca">
+            <button type="submit" id="bpesquisa">Pesquisar</button>
+        </header>
+
+        <main>
+            <section class="carousel">
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src=".vscode/Captura de tela 2024-06-13 132759.png" alt="Produto 1">
+                        
+                    </div>
+                    <div class="carousel-slide">
+                        <img src=".vscode/Captura de tela 2024-06-13 133613.png" alt="Produto 2">
+                      
+                    </div>
+                    <div class="carousel-slide">
+                        <img src=".vscode/Captura de tela 2024-06-13 133808.png" alt="Produto 3">
+                       
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+            </section>
+        </main>
+            <div class="prod">
+            <h3>Base Bruna Tavares</h3>
+            <img src=".vscode/Base-Liquida-Bruna-Tavares-Skin-F30-7896032656864_1.png" alt="Base líquida Bruna Tavares" class="imga">
+            <p>Base Bruna Tavares</p>
+            <span class="preco">R$79</span>
+            <br>
+            <button><strong>Compre aqui</strong></button>
+        </div>
+        <div class="prod">
+            <h3>Base Bruna Tavares</h3>
+            <img src=".vscode/Design_sem_nome-removebg-preview.png" alt="Base líquida Bruna Tavares" class="imga">
+            <p>Base Bruna Tavares</p>
+            <span class="preco">R$79</span>
+            <br>
+            <button><strong>Compre aqui</strong></button>
+        </div>
         <div class="prod">
             <h3>Base Bruna Tavares</h3>
             <img src=".vscode/Base-Liquida-Bruna-Tavares-Skin-F30-7896032656864_1.png" alt="Base líquida Bruna Tavares" class="imga">
             <p>Base Bruna Tavares</p>
             <span class="preco">R$79</span>
             <br>
-            <button>compre aq</button>
-        </div>
-        <div class="prod">
-            <h3>Base Bruna Tavares</h3>
-            <img src=".vscode/Design sem nome.png " alt="Base líquida Bruna Tavares" class="imga">
-            <p>Base Bruna Tavares</p>
-            <span class="preco">R$79</span>
-            <br>
-            <button>compre aq</button>
+            <button><strong>Compre aqui</strong></button>
         </div>
         <div class="prod">
             <h3>Base Bruna Tavares</h3>
@@ -30,15 +64,7 @@
             <p>Base Bruna Tavares</p>
             <span class="preco">R$79</span>
             <br>
-            <button>compre aq</button>
-        </div>
-        <div class="prod">
-            <h3>Base Bruna Tavares</h3>
-            <img src=".vscode/Base-Liquida-Bruna-Tavares-Skin-F30-7896032656864_1.png" alt="Base líquida Bruna Tavares" class="imga">
-            <p>Base Bruna Tavares</p>
-            <span class="preco">R$79</span>
-            <br>
-            <button>compre aq</button>
+            <button><strong>Compre aqui</strong></button>
         </div>
    
             <div class="prod">
@@ -47,9 +73,7 @@
                 <p>Base Bruna Tavares</p>
                 <span class="preco">R$79</span>
                 <br>
-                <button>compre aq</button>
-            </div>
-           
-                   
+                <button><strong>Compre aqui</strong></button>
+            </div>      
     </body>
 </html>

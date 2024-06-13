@@ -11,15 +11,13 @@ body {
 }
 
 header {
-    background-color: #f7f7ff;
-    padding: 20px 0;
+    background-color: #18929D;
+    padding: 30px 200px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    background-image: url('https://images.vexels.com/media/users/3/217085/isolated/preview/81447e17cc5efe0a1b4697bc91ad6e57-doodle-de-passaro-tropical-de-arara.png');
-    background-repeat: no-repeat;
     background-size: 100px;
-    background-position: bottom left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #f8f8f8;
 }
 
 header h1 {
@@ -431,7 +429,7 @@ main {
 .prod{
     background-color: #E6F5F6;
     width: 300px; /* Largura da div */
-    height: 420px; /* Altura da div */
+    height: 450px; /* Altura da div */
     text-align: center;
     border-radius: 5%;
     margin: 10px;
@@ -441,4 +439,72 @@ main {
 .imga{
     max-width: 250px; /* Largura máxima da imagem */
     max-height: 250px; /* Altura máxima da imagem */
+}
+
+.carousel {
+    position: relative;
+    max-width: 1500px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-slide h2, .carousel-slide p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #18929D;
+    color: #ffffff; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#pesquisarprodutos{
+    width: 600px; /* Largura da div */
+    height: 10px;
+}
+
+#bpesquisa{
+    background-color: #333333;
 }
