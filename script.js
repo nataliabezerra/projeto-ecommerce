@@ -37,3 +37,7 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
 });
+
+window.addEventListener('load', () => {
+    //...
+})

@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt=br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - North Beauty</title>
-    <link rel="stylesheet" href="paginainicial.css">
+    <title>Login | github.com/andersonleandrog</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <header id="Cadastrotitulo">
-        <h1>Login</h1>
-    </header>
-
-    <form action="/visualizacao" method="post" id="form_cadastro">
-       
-        <div class="input-group" id="input-groupcadastro">
-            <label for="email" id="labelcadastro">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Email">
+    <div id="container">
+        <div class="banner">
+            <img src=".vscode/imagmaleatoriaa.png" alt="imagem-login">
+        
         </div>
-        <div class="input-group" id="input-groupcadastro">
-            <label for="senha" id="labelcadastro">Senha:</label>
-            <input type="password" id="senha" minlength="6" required placeholder="Senha">
-        </div>
-        <div class="input-group checkbox-group" id="checkbox-groupcadastro">
-    
-            <label for="notificacao" id="frase" >Receber notificações do site?</label> 
-            <input type="checkbox" id="notificacao" name="notificacao" required><br><br>
-        </div>
-<br>
-        <button type="submit" id="botãocadastro">Login</button><br><BR><BR><BR><BR></BR></BR></BR></BR><br><br><br><br><br><br><br>
-        <footer>
-            <p>&copy; 2024 North Beauty. Todos os direitos reservados.</p>
-        </footer>
-    </form>
 
+        <div class="box-login">
+            <h1>
+                Olá!<br>
+                Seja bem vindo de volta.
+            </h1>
 
+            <div class="box">
+                <h2>faça o seu login agora</h2>
+                <input type="text" name="username" id="username" placeholder="nome">
+                <input type="password" name="password" id="password" placeholder="senha">
+                
+                <a href="password.html">
+                    <p>Esqueceu a sua senha?</p>
+                </a>
+
+                <button><strong>Login</strong></button>
+                
+                <a href="account.html">
+                    <p>Criar uma conta</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
