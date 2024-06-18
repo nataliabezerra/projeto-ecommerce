@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginainicial.css">
+    <script src="script.js"></script>
+    <title>Produtos</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="ss1"> <strong>NorthBeauty</strong></h1>
+        <input type="text" id="pesquisarprodutos" placeholder="Pesquisar produto ou marca">
+        <button type="submit" id="bpesquisa"> <strong> Pesquisar</strong></button>
+        <nav id="aess">
+            <ul id="aess1">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="ddd"></div>
+    <div id="dd">
+        <main>
+            <section class="carousel" style="position: relative;
+            max-width: 380px;
+            height: 410px;
+            margin: 100px auto;
+            overflow: hidden;
+            border: 1px solid #dddddd;
+            margin-left: 300px;">
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src=".vscode/Base-Liquida-Bruna-Tavares-Skin-F30-7896032656864_1.png" alt="Produto 1">
+
+                    </div>
+                    <div class="carousel-slide" style=" min-width: 100%;
+    box-sizing: border-box;">
+                        <img src=".vscode/156492-1600-1600.png" alt="Produto 2">
+
+                    </div>
+                    <div class="carousel-slide" style=" min-width: 100%;
+    box-sizing: border-box;">
+                        <img src=".vscode/aaaaaaaaaaaaaa.png" alt="Produto 3">
+
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
