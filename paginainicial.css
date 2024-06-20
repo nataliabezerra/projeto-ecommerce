@@ -600,6 +600,40 @@ button{
 
 
 #dd{
+    display: flex;
     margin-left: 100px;
     margin-top: 80px;
+}
+
+#ppp{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+#coresdebase{
+    width: 500px;
+    height:  300px;
+}
+
+#ppp1{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 250px;
+    font-size: 23px;
+}
+
+#pp{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 280px;
+    font-size: 18px;
+}
+
+#descricao{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 530px;
+    font-size: 23px;
 }
