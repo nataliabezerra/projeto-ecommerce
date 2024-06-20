@@ -515,13 +515,13 @@ button{
 
 #x{
     width: 20px;
+    margin-left: 10px;
 }
 
 #nbnb{
     margin: 30px;
 }
 #nbnb1{
-    margin: 50px;
     margin-top: 0px;
     width: 30px;
     float: right;
